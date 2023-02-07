@@ -121,6 +121,7 @@ arrayMachine(prvi, drugi);
 */
 //ili
 
+/* 
 const firstArray = ["a", "b", "c"];
 const secondArray = ["k", "b", "m"];
 
@@ -136,3 +137,58 @@ const arrayMachine = function (first, second) {
 };
 
 arrayMachine(firstArray, secondArray);
+*/
+
+/*
+setInterval(() => {
+  console.log("Jako sam pametan");
+}, 3000);
+
+function sendEmail() {
+  const alertMessageEl = document.querySelector(".alert-message");
+
+  alertMessageEl.style.display = "block";
+
+  setTimeout(() => {
+    alertMessageEl.style.display = "none";
+  }, 3000);
+}
+*/
+
+/*
+var f = document.querySelector("#body");
+var h1 = document.createElement("h1");
+document.prepend(h1);
+
+var k = document.getElementsByClassName("description");
+var l = document.createElement("div");
+l.className = "info";
+k.appendChild(l);
+const footer = document.querySelector("footer");
+const ul = footer.querySelector("ul");
+
+const lis = [...Array[5]].map(() => {
+  const li = document.createElement("li");
+  li.textContent = "List item";
+  return li;
+});
+
+lis.forEach((li) => URL.appendChild(li));
+*/
+
+const descriptionEl = document.querySelector(".description");
+const footerEl = document.querySelector("#footer");
+const ulEl = document.querySelector("ul");
+
+const h1 = document.createElement("h1");
+h1.innerText = "Pametni smo";
+descriptionEl.parentNode.prepend(h1);
+
+const infoDiv = document.createElement("div");
+infoDiv.classList.add("info");
+footerEl.parentNode.insertBefore(infoDiv, footerEl);
+
+for (let i = 0; i < 3; i++) {
+  const li = document.createElement("li");
+  ulEl.appendChild(li);
+}
